@@ -34,5 +34,13 @@ With this example I want to show how to code tests using most features codeceptJ
     
       codeceptjs run-multiple --steps --all  --plugins allure
 
+## References
+### Tools
+* [Allure](https://docs.qameta.io/allure/)
+* [CodeceptJS](https://codecept.io)
+* [NodeJS](https://nodejs.org/en/)
+
+### Youtube tutorials
+* [ATDD with CodeceptJS: Effective Testing Without Pain, Michael Bodnarchuk](https://youtu.be/paBe0uu68uc)
 
 Enjoy
