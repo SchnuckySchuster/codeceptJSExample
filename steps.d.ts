@@ -1,5 +1,5 @@
 
-type ICodeceptCallback = (i?: CodeceptJS.I, current?:any, ...args: any) => void;
+type ICodeceptCallback = (i?: CodeceptJS.I, current?:any, searchBarFragment?:CodeceptJS.searchBarFragment, testPagePage?:CodeceptJS.testPagePage, ...args: any) => void;
 
 declare class FeatureConfig {
   retry(times: number): FeatureConfig
@@ -249,6 +249,8 @@ declare function AfterSuite(callback: ICodeceptCallback): void;
 
 declare function inject(): {
   I: CodeceptJS.I
+  searchBarFragment: CodeceptJS.searchBarFragment
+  testPagePage: CodeceptJS.testPagePage
 };
 declare function locate(selector: LocatorOrString): Locator;
 declare function within(selector: LocatorOrString, callback: Function): Promise<any>;
@@ -368,8 +370,21 @@ declare namespace CodeceptJS {
     grabDataFromPerformanceTiming() : Promise<string>,
     debug(msg: string) : void,
     debugSection(section: string, msg: string) : void,
+    typeOnKeyboard(text: string) : void,
+    amOnAnIPadInLandscapeModus(text: string) : void,
+    amOnAnIPhone(text: string) : void,
+    searchForArticle(text: string) : void,
     say: () => any; 
     retryStep(opts: string) : void,
+
+  }
+
+  export interface searchBarFragment {
+
+  }
+
+
+  export interface testPagePage {
 
   }
 
