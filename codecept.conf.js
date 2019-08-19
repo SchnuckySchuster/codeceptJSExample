@@ -36,7 +36,7 @@ exports.config = {
   tests: './tests/*_test.js',
   multiple: {
     parallel: {
-      chunks: 2,
+      chunks: 3,
       browsers: ['puppeteer']
     }
   },

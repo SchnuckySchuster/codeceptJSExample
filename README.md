@@ -33,6 +33,8 @@ With this example I want to show how to code tests using most features codeceptJ
 * Running tests in parallel works like this:
     
       codeceptjs run-multiple --steps --all  --plugins allure
+      allure serve output/*
+* The Gherkin tests are executed first and are not executed in parallel to the rest of the tests
 
 ## References
 ### Tools
