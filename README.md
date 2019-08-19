@@ -32,7 +32,7 @@ With this example I want to show how to code tests using most features codeceptJ
 * In "./helpers/puppeteer_helper.js" you can find examples on how to code helpers for puppeteer. 
 * Running tests in parallel works like this:
     
-      codeceptjs run-multiple --steps --all  --plugins allure
+      npx codeceptjs run-multiple --steps --all  --plugins allure
       allure serve output/*
 * The Gherkin tests are executed first and are not executed in parallel to the rest of the tests
 
